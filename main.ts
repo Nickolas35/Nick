@@ -1,3 +1,7 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
+    music.magicWand.play()
+    effects.confetti.startScreenEffect()
+})
 let mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
@@ -16,4 +20,9 @@ let mySprite = sprites.create(img`
     . . . f f f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
+tiles.placeOnRandomTile(mySprite, sprites.castle.shrub)
 tiles.setTilemap(tilemap`level1`)
+forever(function () {
+    controller.moveSprite(mySprite)
+    scene.cameraFollowSprite(mySprite)
+})
