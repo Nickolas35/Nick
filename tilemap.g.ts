@@ -24,6 +24,25 @@ namespace myTiles {
 . . . . . . . . . . . 2 2 2 2 . 
 . 2 2 2 2 2 2 2 2 2 2 2 . . . . 
 `, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,sprites.dungeon.floorLight2,sprites.dungeon.collectibleRedCrystal,sprites.dungeon.collectibleBlueCrystal,sprites.castle.shrub,sprites.castle.rock1], TileScale.Sixteen);
+            case "level2":
+            case "level2":return tiles.createTilemap(hex`1000100001010101010101010101010100000000000000000000000000000001000101000101010101010100010001010000010001010103000000000100010101010100010101010101010101000000000000000101010101010101010101010101000100000000000000000000000000000001000101010101010101010101010100010001000000000000000000000001000100010001010101000101010100010001000100010101010001010301000100010001000000010100010100000001000100010101020101000101010101010001000101010101010001010101010100010001010101010100010100000000000100000000000000000101030101010101`, img`
+2 2 2 2 2 2 2 2 2 2 2 2 . . . . 
+. . . . . . . . . . . 2 . 2 2 . 
+2 2 2 2 2 2 2 . 2 . 2 2 . . 2 . 
+2 2 2 . . . . . 2 . 2 2 2 2 2 . 
+2 2 2 2 2 2 2 2 2 . . . . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 2 
+. . . . . . . . . . . . . . . 2 
+. 2 2 2 2 2 2 2 2 2 2 2 2 2 . 2 
+. 2 . . . . . . . . . . . 2 . 2 
+. 2 . 2 2 2 2 . 2 2 2 2 . 2 . 2 
+. 2 . 2 2 2 2 . 2 2 . 2 . 2 . 2 
+. 2 . . . 2 2 . 2 2 . . . 2 . 2 
+. 2 2 2 . 2 2 . 2 2 2 2 2 2 . 2 
+. 2 2 2 2 2 2 . 2 2 2 2 2 2 . 2 
+. 2 2 2 2 2 2 . 2 2 . . . . . 2 
+. . . . . . . . 2 2 . 2 2 2 2 2 
+`, [myTiles.transparency16,sprites.castle.tilePath5,sprites.dungeon.collectibleRedCrystal,sprites.dungeon.collectibleBlueCrystal], TileScale.Sixteen);
         }
         return null;
     })
